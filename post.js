@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     form.addEventListener('submit', function(event) {
         event.preventDefault();
+
+        alert('Event Posted')
         
         const formDataObject = {
             title: form.elements['title'].value,
