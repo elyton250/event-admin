@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+html {
+    background: url('http://thekitemap.com/images/feedback-img.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+#form-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#form-div {
+    background-color: rgba(72, 72, 72, 0.8);
+    padding: 35px;
+    width: 800px;
+	height:fit-content;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.feedback-input {
+    color: #3c3c3c;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 15px 15px 15px 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+.feedback-input:focus {
+    background: #fff;
+    border: 2px solid #3498db;
+    outline: none;
+}
+
+.focused {
+    color: #30aed6;
+    border: #30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name {
+    background-image: url('http://rexkirby.com/kirbyandson/images/name.svg');
+    background-size: 25px;
+    background-position: 15px center;
+    background-repeat: no-repeat;
+}
+
+#date {
+    background-image: url('http://rexkirby.com/kirbyandson/images/email.svg');
+    background-size: 25px;
+    background-position: 15px center;
+    background-repeat: no-repeat;
+}
+
+#comment {
+    background-image: url('http://rexkirby.com/kirbyandson/images/comment.svg');
+    background-size: 25px;
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 430px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    background-color: white;
+}
+
+#button-blue {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    transition: all 0.3s;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+#button-blue:hover {
+    background-color: #2980b9;
+}
+
+.submit:hover {
+    color: #3498db;
+}
+
+@media only screen and (max-width: 580px) {
+    #form-div {
+        width: 88%;
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+/* Reset default browser styles */
+input[type="date"] {
+    appearance: none;
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="date"]:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: white;
+}
+
+input[type="date"]::placeholder {
+    color: #999;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}

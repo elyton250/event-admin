@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="post.css">
+    <title>Update</title>
+</head>
+<body>
+    <div class="welcome"><h1>Upload Event Details Here</h1></div>
+
+    <!--TO DO: Addd booking limnk-->
+    
+    <div id="form-main">
+        <div id="form-div">
+          <form class="form" id="form1">
+            
+            <p class="name">
+              <input name="title" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Title" id="title" />
+            </p>
+            
+            <p class="date">
+                <label for="date">Date Of The Event:</label>
+                <input name="date" type="date" class="validate[required]" id="date" />
+            </p>
+
+            <p class="text">
+              <textarea name="description" class="validate[required,length[6,300]] feedback-input" id="description" placeholder="Event Description"></textarea>
+            </p>
+            
+            
+            <div class="submit">
+              <input type="submit" value="SEND" id="button-blue"/>
+              <div class="ease"></div>
+            </div>
+          </form>
+        </div>
+</body>
+<script src="post.js"></script>
+</html>
